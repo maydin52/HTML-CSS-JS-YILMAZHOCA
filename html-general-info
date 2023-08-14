@@ -1,0 +1,153 @@
+Internet Programcılığı(Web Programming)
+
+
+Distributed Architecture(Dağıtık Mimari)
+Client-Server yapıları
+Web programming bunun alt kümeleri
+
+
+client : browser
+server : web sunucu
+
+
+Dinamik web sayfaları olusturma surecleri...
+
+
+MVC bir design pattern dir.
+single type ?
+proxy
+observer
+adaptor
+factory .. gibi
+Yüzlerce pattern var.
+
+
+80 li yıllarda goff 4 lü çete 20-30 tane pattern ortaya atıyorlar.
+
+
+Browser üç temel teknoloji üzerinden gösterir.
+HTML-CSS-JS =>Front-End Development...
+
+
+HTML(HyperText Markup Language)
+
+İnternet çıkış noktası CERN
+sonra 50 sonu 60 başında abd ordusu 90 a kadar ARPANET
+İnternet Türkiyeye 1995 ten sonra geldi.
+Baska ağlarda vardı o dönem.
+
+
+Internet: Network(Ağ)
+Networkler: 
+    Veri paylasımı 
+    Kaynak(Resource) paylasımı...
+
+Kaynak paylaşımına örnek;
+Networkun olmadığı bir laboratuarda her pc nin yanında ayrı yazıcı olduğunu düşün.
+Şimdi network printer var, herkes ona gönderiyor.
+Veya Grid ? Computing uygulaması ile donanımları birleştirerek super computer oluşturma
+
+
+Browser:(http, https protokolleri)
+  netscape navigator, ie, firefox, chrome, yandex, opera, brave, tor, ...
+
+netscape navigator ; şuan battılar. mozilla tabanlıdır. bu sektörde ilginç konulara neden olmuştur.
+İlk browswer firmalarından biri ie den önce. zamanının sektör lideri.
+versiyon 2.0 çıkarırken 90 lı yıllarda, bu html çok statik biz bunu daha dinamik hale nasıl getirebiliriz.
+statik html yi dinamik hale getirmek için olmuyor dememiş oturup script bir dil yazıyor ve livescript adını veriyor. daha sonra bu javascripte dönüyor.
+javascript buradan elmiştir. js ilk çıkınca kasırga gibi esmiştir ve bu arada ms bu adamlara gidip js kaynak kodlarını benimle paylaş ben de ie de paylaşayım demiş ama adamlar vermemiş hayır demiş.
+ms ie yi işletim sistemi içinde bedava verince rekabet edemiyorlar. mahkeme ms nin 3 e bölünmesi kararını verdi rekabet şartlarını ihlal için.
+sektörü şekillendirdiler ve adamlar battılar.
+
+
+Tasarım, renk, resimler konusunda front end konularında kendini geliştirmelisin...
+
+DİKKAT!!! web de ticari kullanırken lisans konusuna dikkat et.
+
+Etki alanı ve ilgi alanı konusu..
+
+
+
+Biz http vb üzerinden uygulama yapıyoruz ama http dışında ftp, ils, tcp/ip, udp gibi yüzlerce farklı protokoller de var.
+
+Web Uygulamalarındaki en onemli husus
+  *** Browser uyumlulugu...
+  *** Ekran cozunurlulugu...
+
+
+*** intenet uzerinde olan materyallerin lisans durumları...
+
+
+tcp/ip protokolu : IP Adresi: Acknowledge bilgisi gerektirir. udp ye göre daha güvenlidir. Karşıya veri tek parça  gönderilmez. Küçük parçalara chank ? denilen ayrılarak gönderilir. Her parçanın numarası olyr.
+Karşı taraf alıypr ve numarasına göre diziyor. mesela 3 nolu paketi gönderdi ama networkte kayboldu. Karşı taraf 3 ü gönder de di ^yok. 3 ü tekrar gönder diyor. BU yüzden yavaş. 
+Udf akıştaki bu eksikleri görmezden gelir. O yüzden sadece gelenlerle işini götürür. Bu yüzen daha hızlıdır.
+     IP4   =>255.255.255.255
+     IP6
+     IP10
+
+0-255 bize byte hatırlatır. Oradaki 4 byte a karşılık geliyor. aygıt sayısı çoğaldığı için ip versiyonları çıktı.
+
+
+
+İmaj üzerinde değişiklik yapılabilecek photoshop acdsee gibi programlar da öğrenilmeli.
+
+
+
+domain name??? DNS
+Önce domain name alınır.
+insanoğlu olarak her sitenin ip adresini ezberleyemeyiz ama string ifadeleri daha kolay akılda tutarız. O yüzden bu var.
+site adını yazdığınızda ip adresini soruyor, buna göre gidiyor.
+
+
+
+
+Sitenin yayınlanabilmesi için bu ve benzeri uygulamaların yüklü olması gerekir; 7-24 ulaşılabilir çalışıyor olmalı. Oyüzden hostinglerden hizmet alıyoruz kendi serverimiz yoksa.
+BU uygulamalar yoksa size cevap vermez.
+Kestrel araştır..... her ortamda kullanılabiliyormuş.
+IIS 
+Apache
+Tomcat
+Php ile ilgili eklentiler,
+.net ile ilgili eklentiler,
+linux vs.
+
+
+Sonrasında FTP ile dosyaların bu ortama yüklenmesi gerekiyor.
+Ortamına göre değişiyor.
+
+
+Zaman zaman yaşanabilecek sorunlara karşılık bazı yerlerde docker kullanılıyor.
+
+Sistem üzerinde tutulan dataların güvenliği konusu...
+
+
+Host Firmalari...
+
+Statik Web Sayfaları 
+Yaptığı iş; isteği aldı kopyaladı geri gönderdi. İnternette sörf yok, herkes kendi cache dosyasında olduğundan biz bize yüklenmiş data üzerinde geziyoruz.
+Daha hızlıdır... 5-10 sayfada sorun yok fakat .....   Oluşturma olayı yok ama uzun vadede örneğin 1000 ürünü olan bir site olsa 1000 sayfasının olması gerekiyor.
+Kanun gereği web sayfası zorunluluğu olduüundan o adam için bir-iki sayfalık bir site yeterli.
+
+
+Dinamik Web Sayfaları
+Yaptığı iş; sunucu o sayfayı server üzeirnde çalıştırıyor. Çünkü programlama diline göre her seferinde sayfa üreriliyor ve öyle gönderiliyor.
+Bir data source veritabanı veya xml json dosyasından veriler çekilip bunları prog dilleriyle okunup o sayfada oluştururken her defasında onlarca değil, 1-2 sayfaya ihtiyaç var.
+Hocanın çizdiği şablon.
+
+
+HTML
+
+Başlanıç ayfaları;
+index.htm , index.html
+
+ms default kullanıyor.
+apache veya iis te ayarlardan panellerinden değiştirilebiliyor.
+
+htm ve html farkı yok aslında.
+
+8+3 kuralı. birdosyanın adı maks 8, soyadı 3 karakter olmalıydı. ilk ms ezdi.
+
+<> =>TAG
+Bir HTML dokumanı <HTML> tag'i ile baslkar </HTML> biter
+HEAD
+BODY
