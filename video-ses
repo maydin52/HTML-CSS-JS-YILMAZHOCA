@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Video Oynat 1</h1>
+        <video src="video/man.mp4" width="300" height="200" autoplay controls loop preload muted></video>
+        <!--ses dosyaları: mp3, wav, ogg
+            video dosyaları: mp4, webm, ogg
+            destekleyen tarayıcı bilgisi : w3schools
+            autoplay : sayfa açılır açılmaz videonun oynamasını sağlar. Her tarayıcı desteklemeyebilir.
+             controls : video kontrollerinin görülmesini sağlar.
+             loop : videonun devamlı oynamasını sağlar.
+             preload : playa basmadan sayfa açıldığında video indirilmeye başlanır.
+             muted : videonun sesi kısılmış halde başlamasını sağlar.
+
+                -->
+
+        <h1>Video Oynat 2</h1>
+        <video width="300" height="200" controls>
+            <source src="video/man.mp4"   type="video/mp4">
+            <source src="video/man.ogg"   type="video/ogg">
+            <source src="video/man.webm"   type="video/webm">
+            Your browser does not support the video tag.
+        </video>  
+        
+        <h1>Ses Oynat 1</h1>
+        <audio src="audio/man.mp3" controls>
+            
+        </audio>
+        
+        <h1>Ses Oynat 2</h1>
+        <audio controls>
+            <source src="audio/man.mp3">
+            <source src="audio/man.ogg">
+            <embed src="audio/man.mp3">
+        </audio>
+        
+        <h1>Ses Oynat 3</h1>
+        <audio controls>
+            <source src="ses/man.mp3" type="audio/mp3">
+            <source src="ses/man.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </body>
+</html>
