@@ -72,3 +72,113 @@
     </table>
 </body>
 </html>
+
+//-------------------------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td { 
+            border:1px solid yellow;
+            border-collapse: none;  
+            }  
+        </style>  
+        <!--border:1px solid yellow; - kenarlık rengini değiştirir.
+            border-collapse: collapse - tablo çizgilerinin kaldırılıp ince bir çizgi haline getirilmesi -->
+
+        <style>
+            th, td {
+                    padding: 15px;
+                }
+
+        </style>
+        <!-- padding: 15px; hücre içindeki metin ile kenarlık arasındaki uzaklığın ayarı -->
+
+        <style>
+            th {
+                    text-align: left;
+                }
+
+        </style>
+        <!-- text-align: left; hücre içindeki metinin yaslanması ayarı -->
+
+        <style>
+            table {
+                    border-spacing: 5px; 
+                }
+
+        </style>
+        <!--  -->
+
+        <style>
+            #t01 {
+                width: 100%;
+                background-color: #f1f1c1;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <center>
+            <h1>Tablo Oluşturma 1</h1>
+            
+            <table border="2">
+                <tr><td>Ad Soyad:</td><td>Mehmet AYDIN</td></tr>
+                <tr><td>Doğum Yeri:</td><td>Muğla</td></tr>
+            </table>
+        </center>
+        <br>
+        
+        <h1>Tablo Oluşturma 2</h1>
+        <table border="1">
+            <caption>Ülke Nüfusları</caption>
+            <thead>
+                <tr><th>Ülke</th> <!-- dikkat bold -->
+                    <th>Nüfus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Türkiye</td><td>77000000</td></tr>
+                <tr><td>Yunanistan</td><td>12000000</td></tr>
+                <tr><td>Bulgaristan</td><td>7000000</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td></td><td>Toplam:96000000</td></tr>
+            </tfoot>
+        </table>
+        <br>
+
+        <h1>Tablo Oluşturma 3</h1>
+        <table border="1">
+                <tr><td colspan="3">Ülke Bilgileri</td></tr>
+                <tr><td rowspan="3">Asya</td><td>Türkiye</td><td>77000000</td></tr>
+                <tr><td>Yunanistan</td><td>12000000</td></tr>
+                <tr><td>Bulgaristan</td><td>7000000</td></tr>
+        </table>
+        <br>
+
+        <h1>Tablo Oluşturma 4</h1>
+        <table style="width:100%"> 
+            <tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr>
+            <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+            <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+        </table>
+        <br>
+
+        <h1>Tablo Oluşturma 5</h1>
+        <table style="width:100%"> 
+            <tr><th>Name</th><td>Mehmet AYDIN</td></tr>
+            <tr><th rowspan="2">Telephone</th><td>05552688892</td></tr>
+            <tr><td>05552688892</td></tr>
+        </table>
+        <br>
+
+        <h1>Tablo Oluşturma 6</h1>
+        <table id="t01"> 
+            <th>Name</th><th colspan="2">Telephone</th>
+            <tr><td>Mehmet AYDIN</td><td>05552688892</td><td>05552688892</td></tr>
+        </table>
+    </body>
+</html>
