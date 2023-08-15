@@ -142,6 +142,8 @@
 
 //-----------------------
 
+index.html
+
 <!DOCTYPE html>
 <html lang="tr">
     <head>
@@ -170,6 +172,8 @@
 </html>
 
 //-----------------------------------------
+
+şablon sayfasında resme link verilmesi
 
 <!DOCTYPE html>
 <html lang="tr">
