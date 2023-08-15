@@ -99,11 +99,12 @@ Kimse 15 sn beklemez.
 
 
 
-dosya formatları bize birşey söylüyor.
+dosya formatları bize birşey söylüyor. Kurumsal firmalarda resim düzenleme ve seçimi farklı kişilerden talep edilir.
 bmp ; ham yani sıkıştırılmamış veridir rawa yakındır. 
 jpeg, jpg ; sıkıştırmak; huffman algoritması. sıkıştırılmış resimde kalite bozulur. kare kare görüntüler, pixelase konusu. 
 Birbirine yakın pixeller varsa daha iyi sıkıştırıyor. Yaklaşık 8 e 1bir gibi. ürün resimlerinde kullanılırç. baskı önemli değil. jpg transparan olamaz.
 png ; vektörel resimler ne kadar zoom yapılırsa yapılsın bozulmaz. Bu yüzden logolarda kullanılır. Ürün resimleri vektörel olamaz. Ayrıca transparan olabilir.
+svg ; vektörel gibi davranıyor, araştır.
 gif ; renk scalasında az renk varsa gif daha iyi sıkıştırır. Ayrıca animasyon olarakta kullanılır fakat epilepsi konusundan dolayı tercih edilmez.
 kırmızı renk konusunda da renk körü kullanıcılarına dikkat.
 
@@ -207,4 +208,49 @@ developer.mozilla.org
 
 
 
+Semantik Web
+- Bir elementin sayfa üzerinde nerede olacağı html den,
+- Nasıl gözükeceği, makyajı yani css den, 
+- Behavior yani davranışı da js ilgilendiriyor. 
+
+
+HTML de canvas araştır. Html de koordinat düzlemi yok. Ya tablolarla yapacağız ya da css kullanarak yapacağız.
+HTML5 <canvas> etiketi JavaScript aracılığıyla grafiksel şekiller çizmek için kullanılır.
+Etiket sadece taşıyıcı görevi görür. Grafik çizmek için JavaScript kullanılır.
+https://www.yusufsezer.com.tr/html5-canvas/
+Zahidin bahsettiği svg konusu da HTML5 ile gelmiş.
+
+
+Blazor araştır. c# yazıyorsun html-css-js çeviriyor ama detaylarda sıkıntılı. Temel konular hallediliyor.
+
+Js sadece browser üzerinde bir şeyler yapılsın diye çıktı.
+
+c++ ile google v8 engine üzerine asenkron program yazıyor ve web sunucu olarak kullanabiliyoruz. Kestrel vs değil node js ile back end yaılabilir.
+16 server ile yaptıkları işi 5 pc ile yapılmış.
+ilk angular sonra react, sonra vuejs (ikinci versiyon diğerlerine göre daha hızlıymş.)
+Js de class oluşturmayı bilmek gerekiyor react yazabilmek için.
+
+ctrl+k+c ; yorum satırına almak
+
+artık table kullanmıyoruz.
+box model : div ler kullanıyoruz.
+
+tablonun ekranda gösterilebilmesi için elemanlarının tamaının lokale yüklenmesi gerekiyor. yani sayfayı beklersiniz, bir anda gelir.
+div de yüklendikte gelir.
+
+içinde resim vs olmadıkça sorun yok, hızlı yükleniyor.
+gelen maillerde bak.
+
+içinde resim doldurulup kullanmak konusu?
+
+adres çubuğundaki ? sonraki kısım querystring olarak geçer.
+
+arama motorları numerik değerleri indexlemez.
+arama motorlarına kaydettirmekk, pagerank ini yükseltmek için adres çubuğuna ürünün adını yazıyorlar.
+
+seo için;
+meta taglere dikkat edilecek. spiderlar dünyadaki tüm sayfaları geziyor ve index no verip kaydediyor.
+haber firmasının google tarafından indexlenip haksız kazanç sağlaması örneği
+
+Browser uyumluluğuna dikkat!!!
 
