@@ -89,7 +89,23 @@ Udf akıştaki bu eksikleri görmezden gelir. O yüzden sadece gelenlerle işini
 
 
 
-İmaj üzerinde değişiklik yapılabilecek photoshop acdsee gibi programlar da öğrenilmeli.
+İmaj üzerinde değişiklik yapılabilecek paint photoshop acdsee fireworks gibi programlar da öğrenilmeli.
+paintte; resmi paintin içine sürükle bırak. alt satırda çözünürlük ve ölçülerini görebilirsin. File - resize altından. kaydederken _thumb_dosyaadi
+
+
+ürünün detaynı görmek isteyen kullanıcı tıklar, orada gösterirsin.
+ilk açılış sayfasonda detay resim göstermemelisin.
+Kimse 15 sn beklemez.
+
+
+
+dosya formatları bize birşey söylüyor.
+bmp ; ham yani sıkıştırılmamış veridir rawa yakındır. 
+jpeg, jpg ; sıkıştırmak; huffman algoritması. sıkıştırılmış resimde kalite bozulur. kare kare görüntüler, pixelase konusu. 
+Birbirine yakın pixeller varsa daha iyi sıkıştırıyor. Yaklaşık 8 e 1bir gibi. ürün resimlerinde kullanılırç. baskı önemli değil. jpg transparan olamaz.
+png ; vektörel resimler ne kadar zoom yapılırsa yapılsın bozulmaz. Bu yüzden logolarda kullanılır. Ürün resimleri vektörel olamaz. Ayrıca transparan olabilir.
+gif ; renk scalasında az renk varsa gif daha iyi sıkıştırır. Ayrıca animasyon olarakta kullanılır fakat epilepsi konusundan dolayı tercih edilmez.
+kırmızı renk konusunda da renk körü kullanıcılarına dikkat.
 
 
 
@@ -164,110 +180,31 @@ Boşluklar ve enter uygulamasına dikkat!!!
 
 HUMAN COMPUTING INTERACTION doktora tezini araştır ve oku
 
-
-//-----------------------------------
-
-index.html
-
-<HTML>
-  <HEAD>
-     <!-- Açıklama Satırı -->
-     <!-- Title, Meta TAGs, Dil Ayarları, CSS stilleri, JS kodlari...  -->
-     <TITLE>
-         İlk HTML sayfasi.. 
-     </TITLE>
-  </HEAD>
-  <BODY>
-      <!-- Asıl gosterilecek icerik... --> 
-      Merhaba HTML  &nbsp;&nbsp;&nbsp;&nbsp; Deneme 123                      Merhaba Dünya
-
-     <br/><br/> 
-
-
-     HTML CSS JS
+ÖNEMLİ:
+- Sık ziyaret ettiğin sitelerde sağ tık - kaynağı görüntüle tıklayarak kodlarını incele
+- Kodun içerisine şifre vb kritik veri yazılmaz.
+- Resmi boyutu örn: 10 mb. resmi width ve height olarak küçültürsen dosya boyutu küçülmez ve sayfa geç yüklenir. 
+thumbnail image  yani tırnak resmi olarak kullanılır.
 
 
 
-     Statik Web Sayfaları...   
-  </BODY>
-</HTML>
 
-//-----------------------------------
+Bazı profesyonel ve yoğun trafikli sitelerin kaynak kodları incelendiğinde;
+- Arada boşluk olmadan yana doğru devam ettiği görülür. Aradaki boşlukları kaldırıldığı programlar var. 
+Bu sayede sıkıştırma sağlanır ve bant genişliği verimli kullanılır.
+Hosting firmaları kullanıcılara ban genişlikleri veriyor. 
+Bu sebepten en ufak bir kazancın bile görüntülenme sayısı fazla olduğundan büyük önemi var. örneğin; bir milyon x 80 kb gibi
+Bant genişliği aşıldığında maliyet artıyor. bant genişliği = para.
 
-tags.html
+
+~ : tilda operatörü (alternans veya yaklaşık ta deniliyor)
+Alt+626 
+AltGr+ü 
 
 
-<!DOCTYPE html>
-<!--Sayfayı HTML5'e gore yorumla...-->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!--Header Etiketleri-->
-   <h1 id="baslangic">Merhaba</h1>
-   <h2>Merhaba</h2>
-   <h3>Merhaba</h3>
-   <h4>Merhaba</h4>
-   <h5>Merhaba</h5>
-   <h6>Merhaba</h6>
+www.w3.org
+developer.mozilla.org
 
-   <b><i><u>Merhaba Dünya</u></i></b>
-   
-   <!--Anchor Tags-->
-   <!--Site dışı-->
-   <a href="http://www.google.com">Google</a>
-   <!--Site ici-->
-   <a href="index.html">Ana Sayfa</a>
-   
 
-   <a href="#html">HTML</a>
-   <a href="#css">CSS</a>
-   <a href="#js">Javacript</a>
-   <!--Sayfa ici-->
-   
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   <h1 id="html">HTML</h1>
-   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et optio vero commodi dolorem velit corrupti soluta, repudiandae nisi eius eum neque modi aliquid nostrum molestias distinctio. Earum molestiae possimus laboriosam.
-   Aliquam rem accusamus possimus, labore animi odio officiis dolorum quam qui! Accusantium vero quis accusamus, molestias ab alias corporis animi quibusdam, dolorum eveniet, ut illo voluptatum atque molestiae. Modi, sunt.
-   Quam ipsum culpa voluptatem et laudantium exercitationem ipsa. Odit ex hic autem qui minima nam id quia? Earum asperiores dolores beatae quis. Voluptatibus quam et iusto exercitationem labore officia ipsum!
-   Eos perferendis repudiandae iste dolorum aliquam. Quisquam, voluptatibus libero? Exercitationem ipsam natus perferendis reiciendis vitae perspiciatis delectus odit, nisi repellendus! Voluptatem ratione recusandae tempora ex consequatur nobis ipsa eaque repudiandae.
-   Dignissimos hic dolore totam odio neque rem fuga nemo, assumenda est error at voluptate facere laudantium suscipit ipsa fugit! Nobis id commodi nulla dolores nihil dolorum voluptate sequi dolorem blanditiis.
-   <h1 id="css">CSS</h1>
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab vero doloremque nostrum laboriosam exercitationem delectus fugiat excepturi, corrupti velit eligendi veniam numquam quidem natus reprehenderit sit sed ad aliquam consectetur.
-   Odit consequuntur consequatur voluptas cum beatae iste iusto temporibus tempora optio doloribus? Assumenda ipsum perspiciatis recusandae optio est molestiae amet quidem voluptatibus sequi incidunt illo possimus alias, animi itaque consequuntur.
-   Molestias atque aliquid provident tempore maxime. Quia, ut! Minima ea quia architecto provident voluptas corrupti voluptatibus! Consequatur ipsa tempora eius deserunt beatae pariatur, saepe, labore unde est, animi debitis praesentium?
-   Illum animi soluta, odit facilis officiis architecto vitae est, facere sint optio ipsa corrupti iste corporis. Inventore aperiam reiciendis, iure quaerat error amet nulla harum cupiditate suscipit, nisi officia ex!
-   Sapiente cum facilis fugiat eius officiis provident voluptas at sed, magni atque temporibus quia distinctio totam, blanditiis sint sunt doloremque aliquid, enim iusto mollitia. Voluptatum explicabo sit sed consectetur quisquam.
-   Fuga, ab! Libero at voluptatum dicta perferendis atque nemo omnis ab repudiandae aspernatur laboriosam amet rerum facere dignissimos illum, repellat officia adipisci, qui deleniti id hic eius. At, dolorem ratione.
-   Dignissimos nihil magnam, numquam facilis odio assumenda rem vero suscipit? Delectus, rerum, eaque libero ut quas a autem aut fugit eligendi voluptatum nisi, nam fuga! Quasi excepturi velit veritatis impedit.
-   Facilis doloremque adipisci aliquid provident maiores, aut alias a ullam, expedita aperiam ad excepturi! Accusantium voluptatem facere deleniti, magnam distinctio consequuntur nostrum, dignissimos impedit, laborum dolor harum ipsam ab amet!
-   Dolore quas placeat, molestias veniam debitis modi dignissimos accusantium quis. Odit vero harum debitis ducimus officiis eligendi, possimus itaque tenetur perspiciatis minima quas pariatur sunt enim consectetur consequatur mollitia unde?
-   Cum porro quas earum. Cum possimus tenetur eos voluptatem. Vitae alias veritatis quod, minima esse saepe dolorum iusto. Perspiciatis eligendi voluptatibus, quaerat tenetur repudiandae commodi recusandae eum veniam fuga labore.
-   <h1 id="js">JS</h1>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel aperiam quam ab nostrum maiores magnam eius? Modi, neque? Quas, tempora? Ipsum iure accusantium cupiditate magnam consequatur ipsa ea quia!
-   Quod molestias dignissimos alias! Inventore dolore sed voluptas delectus possimus quisquam nobis est non a distinctio nihil, deleniti recusandae voluptate blanditiis laboriosam eos. Cumque iure incidunt iusto iste, magni totam.
-   Pariatur quidem necessitatibus ullam quasi, ducimus consectetur non optio eligendi repellat nostrum nulla temporibus? Minus doloribus itaque quas quod possimus, voluptatibus, recusandae omnis quam, amet corporis blanditiis cumque eum unde.
-   Dolorem fugit, suscipit beatae rem unde est corrupti assumenda quam itaque, reprehenderit porro. Neque aspernatur vero voluptate reprehenderit voluptatem placeat eum, non temporibus ullam quibusdam iste molestiae quam quo doloribus.
-   Maiores reprehenderit, labore deserunt quae officia fugit nemo praesentium ex ipsam alias natus molestias cumque vel. Tempore dolore animi vel facere commodi aperiam odit quia natus reiciendis quam, culpa debitis.
-   Cupiditate fugiat modi eveniet facere, dignissimos odio eligendi quo sed dolore. At quaerat, sapiente corporis architecto quia quod, rerum non aliquam, sunt officia praesentium facere sed. At ipsa nostrum fuga.
-   Quas tempora inventore libero, ratione quisquam ea nihil excepturi esse nulla delectus hic ex quaerat, dolores quo ab culpa sint asperiores voluptas, exercitationem nobis voluptatibus dignissimos quibusdam aliquam maxime. Quaerat!
-   Expedita fugiat distinctio animi quidem provident ad amet, alias facere, nihil aliquid excepturi. Facilis rerum, facere id pariatur debitis modi quasi exercitationem accusantium dolor, dolores perferendis quae, repellendus repellat dicta?
-   Quo perferendis minus adipisci quod? Aspernatur repellat facilis dolorum sint incidunt dolorem sed delectus odit itaque laudantium, culpa est ipsum modi quaerat enim illum minima at optio nihil provident adipisci.
-   Natus nesciunt quis delectus veritatis nostrum iure ea cum nisi ad vero cumque dolores officia, quasi porro repellendus, modi blanditiis quam? Voluptatum reiciendis dicta neque ullam placeat itaque hic nisi!
-   Dignissimos laboriosam itaque suscipit necessitatibus iusto sint expedita sequi excepturi nobis iste distinctio eaque soluta, facere cum ad nulla! Quis mollitia, aut explicabo dolores beatae autem quibusdam aperiam corporis perspiciatis.
-   Quaerat laboriosam expedita ipsam alias dolorum pariatur temporibus, ducimus amet obcaecati odio delectus voluptatum vero consectetur nemo ab quo. Expedita, sit quaerat magnam fugit atque magni odio accusantium voluptate dignissimos?
-   Explicabo id sequi delectus sint accusamus, labore minus dolores porro dolore vel laborum cumque cum reiciendis odit quam illum quae ea autem. Error aliquid ratione hic nemo qui veniam minus.
-   Voluptates sint quidem officia blanditiis, adipisci consectetur similique harum vel laboriosam eaque quam asperiores nihil, in aspernatur id dignissimos dolor nemo soluta iure nam! Incidunt ut dolorum quam unde inventore.
-   Quaerat, culpa nisi sit ipsa repellat cumque aut dolore alias praesentium aspernatur animi suscipit necessitatibus architecto ut harum ea quos dicta nihil pariatur iste incidunt quasi ipsum, dolorem rerum? Doloribus?
 
-  <a href="#baslangic">Sayfa baslangicina Don</a>
-</body>
-
-</html>
-
-//-----------------------------------
 
