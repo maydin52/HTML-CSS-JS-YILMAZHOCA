@@ -13,3 +13,52 @@
    
     </body>
 </html>
+
+//----------------------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body id="ust">
+        <h1>Kurslarımız</h1>
+        <ul>
+            <a href="#yazilim"><li>Yazılım Uzmanlığı</li></a>
+            <a href="#sistem"><li>Sistem Uzmanlığı</li></a>
+            <a href="#web"><li>Web Tasarım</li></a> 
+        </ul>
+
+        <h2 id="yazilim">Yazılım Uzmanlığı</h2>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+
+        <h2 id="sistem">Sistem Uzmanlığı</h2>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+
+        <h2 id="web">Web Tasarım</h2>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+        <p>Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.Yazılım uzmanlığıyla ilgili bir paragraf yazılı.</p>
+
+        <a href="#ust">Sayfa başına Dön...</a>
+    </body>
+</html>
