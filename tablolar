@@ -1,0 +1,74 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--NSA HTML de koordinat sistemi yok-->
+    <!--Canvas(HTML5) Haric-->
+    <!--Biz elementleri sayfada nerede olacağına nasıl karar vereceğiz...-->
+    <!--Table etiketi kullanılır...-->
+    
+    <!--tr: satir-->
+    <!--td: sutun-->
+    <!--th: header koyu renk yazar-->
+    <!-- HTML5 ile birlikte -->
+    <!-- thead : baslik--> 
+    <!-- tbody : govde -->
+    <!-- tfoot : sonu  -->
+    
+    <table border="1">
+        <tr>
+            <th>AAA</th>
+            <th>AAA</th>
+            <th>AAA</th>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+    </table>
+
+    <br>
+    <table border="1">
+        <tr>
+            <th colspan="3">AAA</th>
+            <!-- <th>aaa</th>
+            <th>aaa</th> -->
+        </tr>
+        <tr>
+            <td rowspan="3">AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <!-- <td>AAA</td> -->
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <!-- <td>AAA</td> -->
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+    </table>
+</body>
+</html>
