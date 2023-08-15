@@ -20,3 +20,64 @@
         <p id="p5">Buraya farklı bir <span id="mavi">metin</span> yazıyorum.</p>
     </body>
 </html>
+
+//--------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>HTML Eğitim Notları. Bu alan Seo için önemli.</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Title da belirtilen kelimeleri açıklayıcı cümleler yazılmalıdır.">
+        <meta name="keywords" content="Title belirtilen kelimeleri vigülle ayırarak. Örn: sarı, lacivert,futbol,topu"
+
+
+    </head>
+    <body>
+        <h1>HTML Tag Açıklamaları</h1>
+        <h2>HTML Tag Açıklamaları</h2>
+        <h3>HTML Tag Açıklamaları</h3>
+        <h4>HTML Tag Açıklamaları</h4>
+        <h5>HTML Tag Açıklamaları</h5>
+        <h6>HTML Tag Açıklamaları</h6>
+
+        <p>Paragrafları bu tagler arasına yazarız.</p>
+
+        <p style="color:blue"> paragrafa css stil özellikleri tanımladık.</p>
+
+        <p id="p1" class="p1c" style="color:yellow"> paragrafa daha farklı css özellikleri tanımladık.</p>
+
+        <p id="p5">Paragrafa bir id tanımladık.<span id="mavi"></p>
+
+        <p id="par2" class="bicim2" style="color:blue"><span class="mor">HTML4 açıklamasındaki cümle.</span></p>
+
+        <p>Paragraf içerisinde enter ile alt satıra<br>etiketi ile geçtik.</p>
+
+        <p>Sarı marker kalemle işaretli göstermek için <mark>mark</mark> tagını kullanırız.</p>
+
+        <p>Kelimeleri <strong>sematik kalın</strong> gösterir.</p>
+
+        <p>Kelimeleri <b>semantik desteklemeyen kalın</b> gösterir.</p>
+
+        <p>Kelimeleri <em>semantik italik</em> gösterir.</p>
+
+        <p>Kelimeleri <i>semantik desteklemeyen italik</i> gösterir.</p>
+
+        <p>Kelime altı yazı olarak köprü<sub>altı</sub> örneği verilebilir.</p>
+
+        <p>Kelime üstü olarak 2<sup>8</sup> örneği verilebilir.</p>
+
+        <p>Kelimenin <u>altına çizgi koymak için</u> kullanırız.</p>
+
+        <p>Kelimeleri Courier formatında <code>yani bu formatta</code> gösterir.</p>
+
+        <p>Kodları <pre>tarayıcıda 
+            yazıldığı 
+                gibi</pre> gösterir.</p>
+        
+        
+
+        
+    </body>
+
+</html>
