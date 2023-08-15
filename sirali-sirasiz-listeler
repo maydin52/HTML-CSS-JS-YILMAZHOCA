@@ -1,0 +1,66 @@
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Listeler</h2>
+    <h3>Siralı Listeler</h3>
+    <ol>
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ol>
+    <ol type="A">
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ol>
+    <ol type="a">
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ol>
+    <ol type="I">
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ol>
+    <ol type="i">
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ol>
+    <h3>Sırasız Listeler</h3>
+    <ul>
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ul>
+    <ul type="circle">
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ul>
+    <ul type="square">
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Bursa</li>
+        <li>Izmir</li>
+    </ul>
+    
+</body>
+</html>
