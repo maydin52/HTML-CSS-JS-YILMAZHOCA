@@ -61,3 +61,144 @@
     <video></video>
 </body>
 </html>
+
+//-------------------------------------------------------- btkakademi
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form name="kayit" action="/kayit.aspx" target=_blank method="get"  autocomplete="on" novalidate accept-charset="utf-8">
+                <!-- method="get"  : adres çubuğundan görünür olarak veri gönderir.
+                     method="post" :gizli şekilde veri gönderir. 
+                     action="/kayit.aspx" : formdaki veriler bu sayfaya gönderilir.
+                    
+                    target=_blank : yeni tab sayfada açar.
+                     _blank, _self, _parent, _top, framename,
+
+                     autocomplete="on" : form elemanlarının daha öncce kaydedilen bilgilerle varsa doldurulabilmesini sağlar.
+
+                     novalidate : geçerlilik kontrolü (metin mi mail mi değil mi vs kontrollerine takılmaz) yapılmaması için kullanılır.
+
+                     enctype="multipart/form-data" sadece post ta kullanılır.
+
+                     rel : 
+                    -->
+            <table>
+               <tr>
+                    <td>Ad Soyad:</td>
+                    <td><input type="text" name="adsoyad" id="idadsoyad" size="20" maxlength="30" placeholder="Ad ve Soyad Giriniz." required> 
+                    </td>
+                </tr> 
+                <tr>
+                    <td>E-Mail:</td>
+                    <td><input type="email" name="email" id="email" required autofocus></td>
+                </tr> 
+                <tr>
+                    <td>Web Sitesi:</td>
+                    <td><input type="url" name="adres" id="adres" value="xx" disabled></td>
+                </tr>
+                <tr>
+                    <td>Yaşınız:</td>
+                    <td><input type="number" name="yas" id="yas"  required></td>
+                </tr> 
+                <tr>
+                    <td>Öneri:</td>
+                    <td><textarea name="oneri" rows="3" cols="18.5"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Gönder">
+                        <input type="reset" value="Temizle">
+                        <input type="image" src=resimler/favicon.ico width="30" height="20"> </td>
+                </tr> 
+            </table>
+           <!-- <input type="" listesindeki type ları incele -->
+           <!-- google submit button arat kullan -->
+        </form> 
+
+        <form name="onay" action="onay.asp" method="get">
+            <input type="checkbox" id="evli" name="evli">
+            <label for="evli">Evliyim</label><br>
+            <input type="checkbox" id="bulten" name="bulten" checked>
+            <label for="bulten">Bülten İstiyorum</label><br><br>
+
+
+            Sevdiğiniz sporu seçiniz:
+            <input type="radio" id="futbol" name="spor" value="futbol" checked>
+            <label for="futbol">Futbol</label>
+            <input type="radio" id="basket" name="spor" value="basket">
+            <label for="basket">Basket</label>
+            <input type="radio" id="voley" name="spor" value="voley">
+            <label for="voley">Voley</label><br><br>
+
+
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" value="özel durum"><br><br>
+
+        </form>
+
+        <form>
+            <br>
+            Doğum Yeri:
+            <select name="dyeri" name="dyeri">
+                <option>Adana</option>
+                <option>Antalya</option>
+                <option>Ankara</option>
+                <option>İstanbul</option>
+                <option selected>İzmir</option>
+            </select>
+
+            <input type="hidden" name="tarih" value="30 Ağustos">
+            <input type="hidden" name="ip" value="246.157.102.110">
+
+            <!-- diğer form elemanları;
+                    color
+                    date
+                    datetime
+                    number
+                    password
+                    range
+                    tel
+                    search
+                
+                    <input>
+                    <label>
+                    <select>
+                    <textarea>
+                    <button>
+                    <fieldset>
+                    <legend>
+                    <datalist>
+                    <output>
+                    <option>
+                    <optgroup>
+                
+                
+                -->
+            <br><br>
+            <input type="color">
+            <br><br>
+            <input type="date">
+            <br><br>
+            <input type="datetime">
+            <br><br>
+            <input type="number">
+            <br><br>
+            <input type="password">
+            <br><br>
+            <input type="range">
+            <br><br>
+            <input type="tel">
+            <br><br>
+            <input type="search">
+            <br><br>
+
+        </form>
+    </body>
+</html>
+
+
