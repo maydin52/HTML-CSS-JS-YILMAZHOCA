@@ -114,3 +114,91 @@
 
     </body>
 </html>
+
+
+//-------------
+//-------------
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sayfadan Sayfaya link Uygulaması</title>
+    </head>
+    <body>
+        <center>
+            <h1>Site Dolaşım Menüsü</h1>
+            <!--<nav id="anamenu">-->
+                <a href="index.html">AnaSayfa</a> | 
+                <a href="urunlerimiz.html">Ürünlerimiz</a> | 
+                <a href="hizmetlerimiz.html">Hizmetlerimiz</a> | 
+                <a href="iletisim.html">İletişim</a> 
+            <!--</nav>-->
+            <hr>
+        </center>
+    <h1>Ana Sayfa</h1>
+    </body>
+</html>
+
+//-----------------------
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sayfadan Sayfaya link Uygulaması</title>
+    </head>
+    <body>
+        <center>
+            <h1>Site Dolaşım Menüsü</h1>
+            <!--<nav id="anamenu">-->
+                <a href="index.html">AnaSayfa</a> | 
+                <a href="urunlerimiz.html">Ürünlerimiz</a> | 
+                <a href="hizmetlerimiz.html">Hizmetlerimiz</a> | 
+                <a href="iletisim.html">İletişim</a> 
+            <!--</nav>-->
+            <hr>
+        </center>
+    <h1>İletişim</h1>
+    <a href="mailto:a@a.com" title="Bize Yazın">Send E-Mail</a> <!-- title fare üzerine gittiğinde çıkan yazı -->
+    <br>
+    <button onclick="document.location='index.html'">Ana Sayfaya Git</button> <!-- js ileymiş -->
+
+    <h2>Türk Bayrağı Dosyasını İndir</h2>
+    <a href="resimler/bayrak-.jpeg">Resmi İndir</a>
+    </body>
+</html>
+
+//-----------------------------------------
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sayfadan Sayfaya link Uygulaması</title>
+    </head>
+    <body>
+        <center>
+        <h1>Site Dolaşım Menüsü</h1>
+        <!--<nav id="anamenu">-->
+            <a href="index.html">AnaSayfa</a> | 
+            <a href="urunlerimiz.html">Ürünlerimiz</a> | 
+            <a href="hizmetlerimiz.html">Hizmetlerimiz</a> | 
+            <a href="iletisim.html" target="_blank">İletişim</a><!--target özelliğinin varsayılan özelliği _self tir. Hedef içerik aynı sekmede açılır. _blank yeni sekmede açar. _parent _top--> 
+        <!--</nav>-->
+        <hr>
+    </center>
+    <h1>Sayfa Adı</h1>
+
+    <h1>Resime Link Verilmesi</h1>
+        <a href="default.asp">
+            <img src="resimler\bayrak-.jpeg" >
+        </a>
+        
+    </body>
+</html>
+
+//-----------------------------------------
+//-----------------------------------------
+
+
