@@ -64,3 +64,60 @@
     
 </body>
 </html>
+
+//-------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Nokta Başlıklı Alışveriş Listesi:</h1>
+        <ul>
+            <li>Elma</li>
+            <li>Portakal</li>
+            <li>Armut</li>
+        </ul>
+
+        <h1>Sıralı Alışveriş Listesi:</h1>
+        <ol start="5" reversed type="i"> <!-- type a, A, 1, I, i gibi liste başlıklarını değiştirebilirsin. -->
+            <li>Elma</li>
+            <li>Portakal</li>
+            <li>Armut</li>
+        </ol>
+
+        <h1>Sıralı İkinci Alışveriş Listesi:</h1>
+        <ol style="list-style-type:upper-roman">
+            <li>Elma</li>
+            <li>Portakal</li>
+            <li>Armut</li>
+        </ol>
+
+        <h1>Sıralı Üçüncü Alışveriş Listesi:</h1>
+        <ol style="list-style-type:lower-alpha">
+            <li>Elma</li>
+            <li>Portakal</li>
+            <li>Armut</li>
+        </ol>
+
+        <p>Buraya <small>normalden daha küçük görünen </small> bir paragraf yazıyorum.</p>
+
+        <p>Buraya <del>üstü çizili görünen </del> bir paragraf yazıyorum.</p>
+
+        <p>Buraya <ins>yeni eklenen ve aynı zamanda altı farklı çizili görünen </ins> bir paragraf yazıyorum.</p>
+
+        <dl> <!-- dl description list-->
+            <dt>Coffee</dt> <!-- dt defines term-->
+            <dd>- Black hot drink</dd> <!-- dd describes each term-->
+            <dt>Milk</dt>
+            <dd>- White cold drink</dd>
+        </dl>
+
+
+
+
+
+
+    </body>
+</html>
