@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Başlık</h1>
+        <p><mark>Sarı lacivert</mark>
+            <strong><em>deri </em></strong>
+            <u>futbol</u> 
+            <b><i>topu</i></b></p>
+        <p>Mesela; 2<sup>3</sup> veya 6<sub>4</sub> gibi.</p>   
+        <p>Buraya <code>farklı bir metin</code> yazıyorum.</p> 
+        <p>Buraya farklı bir metin yazıyorum. 
+            <pre>sxfdfdsf 
+            adsafdfdfddgfdgdg  
+            sgssgdfg dbdfghdf gbgfsg
+            sfgsgdg</pre>
+        </p>
+        <p id="p5">Buraya farklı bir <span id="mavi">metin</span> yazıyorum.</p>
+    </body>
+</html>
