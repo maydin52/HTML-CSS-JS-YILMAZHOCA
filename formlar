@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Neden Onemli: Kullanıcıdan veri almak için kullanılır...  -->
+    <!--GET : Veri QueryString üzerinden gönderilir(Limitli-1024)... -->
+    <!--POST: Veri arka planda gönderilir (Limitsiz-)  -->
+    <form method="get">
+        <input type="text"  id="kullanici" name="kullanici" placeholder="Kullanici adini giriniz" />
+        <input type="password" id="sifre" name="sifre" placeholder="Sifre giriniz" />
+        <input type="submit" value="Gönder" /> 
+    </form>
+    <br>
+    <!--id: js-->
+    <!--name:server tarafında verileri yakalamak için-->
+
+    <form method="post">
+        <input type="text"  id="kullanici" name="kullanici" placeholder="Kullanici adini giriniz" />
+        <input type="password" id="sifre" name="sifre" placeholder="Sifre giriniz" />
+        <input type="submit" value="Gönder" /> 
+    </form>
+    <br><br>
+    <form method="get" action="">
+         <input type="checkbox" />
+         <input type="color" />
+         <input type="file" />
+         <input type="date" />
+         <input type="datetime" />
+         <input type="month" />
+         <input type="number" />
+         <input type="email" />
+         <input type="radio" />
+         <input type="range" />
+         <input type="tel" />
+         <input type="week" />
+         
+         <input type="button" value="Gonder"> 
+         <br>
+         <!--Combox'a karşılık -->
+         <select> 
+            <option>Istanbul</option>
+            <option>Ankara</option>
+            <option>Bursa</option>
+         </select>
+         <br>
+         <textarea cols="60" rows="5"></textarea>
+         <br>
+         <br>
+         <input type="hidden" value="gizli bilgi" />
+    </form>
+
+    <audio></audio>
+    <video></video>
+</body>
+</html>
