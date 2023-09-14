@@ -48,7 +48,7 @@
          <select> 
             <option>Istanbul</option>
             <option>Ankara</option>
-            <option>Bursa</option>
+            <option selected>Bursa</option>
          </select>
          <br>
          <textarea cols="60" rows="5"></textarea>
