@@ -17,7 +17,8 @@
             sgssgdfg dbdfghdf gbgfsg
             sfgsgdg</pre>
         </p>
-        <p id="p5">Buraya farklı bir <span id="mavi">metin</span> yazıyorum.</p>
+        <p id="p5">Buraya farklı bir <span id="mavi">metin</span> yazıyorum.</p> // dikkat!!!! sanırım yanlış.
+        <p>Bu bir <span style="color: red;">kırmızı renkli metin</span> örneğidir.</p>
     </body>
 </html>
 
