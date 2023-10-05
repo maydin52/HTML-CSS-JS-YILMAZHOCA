@@ -1,0 +1,92 @@
+Javascript
+ Netscape Navigator =>2. Versiyonu için çalışırken =>Script Dil Geliştiriliyor..
+
+O zaman html çok statik bu problem.
+html içine yazdın webe attın.
+Gidip source kodu değiştirip servere atmak gerekiyor.
+bunun için çalışırken script dil geliştiriyorlar. Live Script
+
+ Live Script => Java Script... (bazıları java popüler olduğundan diyor, bazıları o dönem java firmasının yakınlığı nedeniyle)
+
+ aradaki fark ; JAVA(Compile) != Javascript(Yorumlanır(interpreter)) complier e ihtiyaç yok sadece yorumlanır.   
+  (java bir programlama dili, javascript bir script dilidir dikkat!!!)
+  programlama dilleri compile edilir yani sonucunda bir exe dosya oluşur oysa script dilleri sadece yorumlanır tarayıcı tarafından.
+
+ms Netscape Navigator kapısını çalıyor bu tekolojiyi benimle paylaş diyor ama adamlar belki de yüzyılın hatasını yapıyorlar ve kabul etmiyorlar.
+Netscape Navigator battı.
+ms JScript çıkardı.
+
+ JavaScript =>
+ JScript    =>
+
+yıllar geçtikçe bu ikisi arasında bazı uyumsuzluklar ortaya çıktı. Biriyle yazılanı diğeri görmüyor gibi.
+bu sebepten ECMA kurumu ortaya çıkıyor.
+
+ ECMA  => Bu kurum böyle gidemez diyor. Avrupalılar daha kuralcı. Geliştiren amerikalı kuralı koyan avrupalı.
+https://www.ecma-international.org/
+
+ilk çıkan döküman 12bin küsür ve bundan sonra bu iki dili bu standartlara göre yazın deniyor.
+
+ (ECMAScript) ES6  =>2015 
+https://www.ecma-international.org/technical-committees/tc39/
+örneğin bir class oluşturmak iççin 6-7 yöntem var. Es6 hayır böyle yapacaksın diyor.
+
+Çok Önemli!!! React Js vs bu stadartlara göre yazılması isteniyor.
+
+ne çok katı ne çok gevşek olmalı. Bazen yerine göre avantajlı, yerine göre dezavantajlı.
+
+Daha sonra ms TypeScript çıkardı. Js biraz daha disipline edildi.
+
+Daha sonra ES7 çıktı ama uzun vadede her yıl güncellemeyi planlıyorlar.
+
+
+
+
+
+JS in onemli donum noktaları...
+1-İlk Çıktığı donem(sadece Browser uzerinde calisir...sayfayı dinamik hale getirmek için) 
+
+2-AJAX(Asynchronous Javascript And XML) = Para. (ilk bulan google. ana sayfası üzerindeki arama textboxunda kullanılıyor.
+  değişen veriler db den geliyor. veriyi okuyup getirirken sayfa post-back olmuyor dikkat!!!. hatta twitterda üç karakter yazdınız diyelim gönder tuşuna başmasanız bile
+  db ye kaydediyor.
+ bu şu demek; sayfa post-back olsaydı sayfanın tümünü server yeniden getiriyordu. yani ilk yükleme maliyeti 10 mb ise her seferinde yine 10 mb gelir. 
+ eskiden video gelirdi biz play tuşuna basmadan oynamaya başlamazdı. Şimdi açılır açılmaz pat oynamaya başlıyor. bu sefer o oynayan video benim kotadan gidiyor.
+ O reklam parası alıyor ondan giden maliyeti karşılıyor ama benden hem zaman hem para gidiyor.
+ Neden asenkron denmesinin nedeni; bu sistem çalışırken sistem aynı zamanda server ile konuşmaya başlıyor.
+ Giden gelen veri 50 kb. internette ücretlendirme bant genişliğiyle ilgili olduğundan her iki taraf için de tasarruf
+ Ayrıca usebility açılsından da kolaylık sağlıyor. haber siteleri gibi. fakat onda da belirli süre içinde refresh yaptırıyor reklam hit sayısı konularından dolayı.
+ hizmeti alan ve verenle ilgili bant genişliğiyle ilgili olduğundan para ve her seferinde 10 mb * 100bin kişi hız, performans ve yatırım maliyeti açısından)
+ (hosting kotasına da dikkat!!!)
+
+3-NODE.JS 2010 da geldi. =>Full Async (twitter? facebook? çalışan biri chrome v8 engine alıyor onun üzerine dosya yazma rutinlerini ekliyor c++ da. js artık sunucu üzerinde host edebilir 
+ hale geliyor. Arkada mongodb, json kullanıyor. web farm hizmeti veren bir firma nodejs geçtikten sonra 16 bilgisayarı 5 bilgisayara düşürüyor. 
+ Buradaki devrim pc de dosya okuma ve yazma işlemi yavaş sürer çünkü rama yazarken gittiği mesafe uzun yani cpu ile ram arası. oysa dosya okuma cpu gidecek diskten 
+ okuyacak, biz biliyoruz ki en yavaş ortam ssd de olsa disktir normal ram e göre, bu süreçte normalde senkron olarak çalışırken sistem, asenkrona çevirdiği için 
+ ayn anda birden fazla süreci hızlandırabiliyor. Dolayısıyla bütüne bakıldığında o büyük performans kazancı asenkron olmasından kaynaklanıyor. 
+ nodejs 2010 da geldi. ms core u 2016 da full asenkron desteğiyle çıkardı. bu konu ms nin de karakteristiğini değiştirdi. asenklrona zorladı. normal mvc den 4 kat daha hızlı core 
+ full asenkron özelliğinden dolayı. bir kişi dünyadaki yazılım akışının değişmesine versile oldu. linux dağıtımları da bu şekilde.
+ js kütüphaneleri (jquery(steve jobs eski flash teknolojisini tarihe gömdü, eskiden diğer örnekler java appletler vs...) vs... gibi) ayrı, 
+ js frameworkleri (sırasıyla ilk çıkanlar; angular, react, vuejs, knockout vs... gibi) ayrı) 
+
+Çoğu firma nodejs servera kuruyor, mongo db üzerinden hallediyor.
+
+SPA: single page application; karşınızda bir sayfa var; ajax rutinleriyle birlikte aynı sayfa tüm crud işlemlerini yaptırabiliyorsunuz. Arkada ajax çalıştırabilmek için js
+ bilmek gerekiyor. ajax reguest atabilmek için vs.
+
+Çerez ; kullanıcı hakkında veri tutmak için kullanılır. Kullanıcıya sormak zorunda.
+
+insanlar neti bırakmasın diye instagram vs oyalıyorlar.
+
+dinamik siteler sunucuda üretilip geliyor fakat js ile sunucuya gitmeden de site dinamikleştirilebiliyor.
+
+js eylemsellik kazandırıyor.
+
+belki gelecekte weble ilgili tek geliştirme dili olarak kalabilir.
+
+Mozilla firefox a teşekkür etmeliyiz onlar da Netscape devamı. 
+dünyadaki ilk toolsu oluşturan
+https://developer.mozilla.org/en-US/
+
+ms ortamları devam ettiği sürece c# devam edecektir.
+büyük firmaların ms bağımlılığı.
+ms arkasında abd derin devleti var.
