@@ -1,0 +1,105 @@
+Temel programlama geneli itibariyle;
+
+Tekrarlı işler için döngüleri kullanırız;
+
+Döngüler ikiye ayrılır;
+- Ne kadar çalışacağı belli olan döngüler,
+- Ne kadar çalışacağı belli olmayan döngüler,
+
+Bazı döngüler özel döngülerdir;
+- Foreach diziler ve koleksiyonlar üzerinde çalışır.
+
+İç içe (nested) de kullanılabilir.
+
+JS 6 çeşit döngü vardır;
+
+//------------------------------------------------------------------------ iki bölüm halinde eklendi
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //js donguler
+        //for
+        //while
+        //do-while
+        //-----------
+        //koleksiyonlar uzerinde calisir...
+        // for-in
+        // for-of
+        // foreach 
+
+        for(let i=0;i<5;i++)
+        {
+            document.writeln("<h1>Merhaba</h1>");
+        }
+
+        while(true)
+        {
+            document.writeln("<h3>Hello</h3>");
+            break;                            DİKKAT!!!  BREAK KOYMAZSAK SONSUZA GİDER.
+        }
+
+        do{
+            //once islem sonra sart...
+           break;
+        }while(true);
+        
+    </script>
+</body>
+</html>
+
+//------------------------------------------------------------------------ diğer döngüler koleksiyonla kullanıldığından aşağıda ayrıca eklendi.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Diziler
+        //JS:Dizi koleksiyon aynı...
+
+        let dizi1 = new Array();   //bos dizi
+        let dizi2 = new Array(10); //10 elemanlı dizi
+        let dizi3 = new Array(2,5,6,7,"deneme"); //ilk deger ataması
+        let dizi4 = [];
+        let dizi5 = [5,566,67,8];
+
+        //JS'de dizileri normal koleksiyon gibi, dizi gibi queue gibi, stack gibi kullanabiliriz...
+       document.writeln(dizi2.length);
+       dizi2[4] =444;          
+
+        //for-in  => indis uzerinden calisir...
+        for(let i in dizi3)
+        {
+            document.writeln(i + ". deger = " + dizi3[i] + " ");
+        }
+        document.writeln("<br>");
+        for(let item of dizi3)
+        {
+            document.writeln(item);
+        }
+        document.writeln("<br>");
+
+        //arrow op.
+        //fat arrow
+        dizi3.forEach(x=>document.writeln(x));
+        document.writeln("<br>");
+        document.writeln(dizi2);
+        document.writeln(dizi5);
+        
+        
+    </script>
+</body>
+</html>
