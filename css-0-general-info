@@ -1,0 +1,72 @@
+CSS(Cascading Style Sheets)
+Katmanlı Stiller
+Bootstrap => CSS kutuphanesi...
+
+1998 li yıllar gazetelerin web sitelerine dönüşme düşüncesi
+
+CSS kodları nereye yazılır...
+1-Tag in içerisinde
+  <h1 style="....">
+2-Her html sayfasında
+  <head>
+     <style>
+       ...
+     </style>
+  </head>
+
+3-Dışarıdan bir dosyada
+   style.css
+
+BASKINLIK:1 en baskın,  3 en az baskın...
+
+Dikkat!!! Yapılan bir değişiklik değişmiyorsa problemi baskınlığa göre aramayı unutma!!!
+
+Dikkat!!! Çok istisani durum. Style dosyasını veritabanında tutmuş.
+
+Dikkat!!! F12 ile açtığında ezilenleri, fareyi üzerine getirdiğindeyse kod bloklarını görebilirsin. 
+Tiklerle görüntü değişikliklerini görebilirsin. Cache disable edebiliyorsun vs. Çok güzel. Firefox çıkarmış ilk.
+
+Stiller birbirinden ; ile ayrılıyorlar.
+
+Dikkat!!! Id iki tane kullanılmamalı. CSS te ikisine de yansıtır ama js de sadece ilk bulduğunu dikkate alır.
+
+
+Renk girişi ve uyumu konusu;
+
+Google arat : named colors
+renk üç temel rengin karışımından oluşuyor. r g b 
+yani bütün renkler 0-255 arası üç renkte oluşuyor bütün renkler
+
+Google arat : color wheel
+canva.com daki renk tekeri altındaki koda dikkat. hexadecimal. örneğin; 16 lı sistemde karşılık gelen ff
+hocanın 333 yazdığı 33 33 33 ün kısaltılmış hali ya da e e e de verebilirdi a-f arası f 15 e karşılık geliyor.
+Renk geçişlerini ve kombinasyonlarını, zıtlarını vs. öneriyor.
+color.adobe.com.tr
+designs.ai/colors......
+
+Google arat :  web colors görsellerden
+eduaspirant.com....
+
+
+
+Font konusunda; windows ve mac fontlarında farklılık olabiliyor. Standardın dışına çıkılacaksa araştırma yapılmalı ve font-family kullanılmalı.
+
+
+
+Selectors(Seciciler)
+1-h1{...} Butun h1'lere uygula
+
+2-class => .ozel{ ... }  => class="ozel"
+
+3-id    => #tek          => id="tek" 
+*** Sayfada sadece o id den bir tane olmalı...
+
+
+BOX Model 
+ Kutu Modelleme...
+Div => kullanılır...
+1-Standard
+2-Flex
+3-Grid
+
+ 
