@@ -1,0 +1,124 @@
+
+//DOM:Document Object Model
+
+Js çıkış noktası; biz html sayfası oluşturyoruz, aslında bunu oluştururken html elementleri kullanıyoruz, 
+    fakat ram üzerinde bunlar DOM diye bir nesnede tutuluyor. HTML elementleri, CSS stilleri vs. her birinin
+    bir DOM içinde karşılıkları var. 
+    React sanal DOM kullandığı için hızlı. Sanal DOM denilen bir kullanım var. Mesela adam DOM üzerinde 10 tane işlem
+    yaptı. Normalde her biri teker teker yapılır. React ın yaptığı, arka planda önce bunları bir sadeleştiriyor, sadeleştirdikten
+    sonra gerçek DOM a iletiyor. Dolayısıyla her seferinde gidip aynı şeyi yapmaktan kurtulduğu için gerçek DOM u tek seferde güncelliyor.
+    O yüzden çok hızlıydı fakat VueJs in 2. versiyonu daha da hızlı olduğu söyleniyor.
+
+    DOM bir tane ve içinde bir tree yapısı bulunuyor.
+    JS html yi statik halden dinamik hale getiriyor. Bu bu şekilde oluyor.
+
+DOM manipülasyonları/işlemleri deniyor.
+Yani document yazdığımız şey DOM üzerinde çalışan nesne.
+
+id lerde küçük büyük harf önemli. CaseSensitive
+
+genellikle js kodları en alta yazılır.
+
+id bir tane olmalı. daha sonra yakalamak istendiğinde ya üçü seçilir ya da getElementById yaptığınızda ilki gelir diğerleri gelmez.
+
+
+//------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .turuncu{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            color:orange;
+        }
+        .mavi{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            color:steelblue;
+        }
+        .kutu{
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+        }
+    </style>
+
+    <script>
+         function mesajDegistir()
+         {
+            let mesaj = document.getElementById("mesaj");
+            mesaj.innerHTML="yeni mesaj....";
+         }
+
+         function renkDegistir(obj)
+         {
+            obj.style.backgroundColor="orange";
+         }
+
+         function renkDegistir2(obj)
+         {
+            obj.style.backgroundColor="gray";
+         }
+    </script>
+
+</head>
+
+<body>
+    
+    <h1 id="merhaba">Merhaba</h1>        // dikkat!!! scriptten sonra olsaydı çalışmazdı. Bu şekilde önce yazılmalı.
+    
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+
+    <h2 class="mavi">Hello</h2>
+    <h2 class="mavi">Hello</h2>
+
+    <h1 id="mesaj">Merhaba Javascript</h1>        //dikkat!!! bu zamana kadar hep sayfa açıldığında yaptık. Buton elementine bağladık bu örnekte.
+    <button onclick="mesajDegistir()">Degistir</button>
+
+    <div class="kutu" onmouseover="renkDegistir(this)" onmouseout="renkDegistir2(this)"></div>        // this dersen o nesneyi gönderirsin. document. yazmadık bu yüzden. nesneyi gidip aratmadım. bulunduğu divden.
+
+    <script>
+        
+        //DOM:Document Object Model
+        //sayfadaki elementlere ulasma...
+
+        let h1= document.getElementById("merhaba");        //dikkat imzadan görüyoruz; html element dönüyor.
+        h1.innerHTML="Değiştir...";
+
+        let h2s = document.getElementsByTagName("h2");
+        for(let i=0;i<h2s.length;i++)
+        {
+            h2s[i].innerHTML="Hi !!!";
+            
+            //CSS ile ilgili stilleri değistirmek ve  attribute 
+            //degerlerini değişstirmek için kullanılan yontemler...
+            //h2s[i].style.color="Red";
+            //h2s[i].className="turuncu";
+            h2s[i].setAttribute("style","color:navy");        // dikkat style, class vs daha geniş kapsamlı kullanılabilen bir yapı
+        }
+
+        let maviler = document.getElementsByClassName("mavi");
+
+        for(let i=0;i<maviler.length;i++)
+        {
+            maviler[i].innerHTML="Hi !!!";
+            maviler[i].style.color="green";
+        }
+
+    </script>
+
+    <script>
+        //js kodu yazılır...
+    </script>
+    
+</body>
+</html>
