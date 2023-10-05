@@ -1,0 +1,102 @@
+
+Fonksiyonel programlama ile kütüphane kavramı ortaya çıkmıştır.
+Yazılım dünyasında İstanbul'un Fethi gibi önemli bir konudur.
+
+Dünyadaki ilk fonksiyonel dil C dır. Oradaki lib ve h ile biten dosyalar küüphane dosyalarıdır.
+Oradaki C++, C#, C nin devamı olduğu için geliyor.
+
+İlk Bell laboratuvarlarında başlamış ve programlama dili geliştirmeye A ile başlamışlar, sonra B, sonra C ve devamı gelmiş.
+
+Kütüphane kavramı.
+Kodları sürekli, tekrar tekrar yazmamak. Bir defa yazıp ihtiyaç olunca kullanmak. Bütün sistem bunun üzerinde gidiyor. 
+Mümkün olduğunca ortam bağımsız yazılması gerekiyor ki esnek kullanılabilsin.
+Burada biraz zor olabilir çünkü bütün kod browser da çalışıyor ama c# ta yazdığımız kod konsolda da, web uygulamasında da yani mvc de de, windows ta da çalışabilir.
+
+Fonksiyon önce tanımlanır, sonra kullanılır. Matematikteki fonksiyon mantığı.
+fonksiyon sembolü burada da küp. Burada fonksiyon c# ta metod.
+
+Dikkat!!! Burada return type diye bir kavram yok.
+
+Yanlış yazıyorsan senin problemin diyor kısacası...
+
+F12 developer tools iyi öğren. front-end çinin.
+js te daha çok konsola bakıyoruz.
+css te daha çok elements bakıyoruz. Ezdiklerini çiziyordu.
+servisler de de daha çok network e bakıypruz.
+
+step by step ilerlemek en sağlıklısı
+
+head, body tagları içinde script tagları arasında veya dış dosyada kullanılabilir.
+
+//--------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Merhaba()
+        {
+            document.writeln("<h1>Merhaba</h1>");
+        }
+        function Topla(s1,s2)
+        {
+            return s1+s2;
+        }
+        function Topla(...sayilar)
+        {
+            let sonuc=0;
+            for (let sayi of sayilar) {
+                sonuc +=sayi;
+            }
+            return sonuc;
+        }
+
+        function faktoriyel(sayi)        //kendi kendini çağıran fonksiyon recursive metod hatırla
+        {
+            if(sayi==1) return 1;        //DİKKAT!!! sonlandırıcı olmazsa sorun. Stack doluyordu. Burada f12 konsolda hata gördük.
+            return sayi* faktoriyel(sayi-1);
+        }
+
+        function diziGoster(dizi)
+        {
+            for(let item of dizi)
+            {
+                console.log(item);
+            } 
+        }
+    </script>
+</head>
+<body>
+    <script>
+        //fonksiyonlar        // Dikkat! Return type olmadığından toplayabildiğini topluyor. diğerlerini string birleştirme yapıyor.
+        Merhaba();
+        
+        document.writeln(Topla(4,5));        
+        document.writeln("<br>");
+        document.writeln(Topla("bir",5));
+        document.writeln("<br>");
+        document.writeln(Topla("uc","bes"));
+        document.writeln("<br>");
+        document.writeln(Topla(1,23,4,56,78,89));
+
+        document.writeln("<br>");
+        document.writeln(faktoriyel(5));
+
+        let sayilar =[45,56,6778,8745,34,213];
+        diziGoster(sayilar);
+    </script>
+
+    <script>
+        function deneme()
+        {
+            document.writeln("yaz...");
+        }
+
+        deneme();
+    </script>
+</body>
+</html>
