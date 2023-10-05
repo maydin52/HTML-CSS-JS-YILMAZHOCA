@@ -1,0 +1,107 @@
+
+Değişken; verileri ramde saklamak için kullanırız.
+
+js isimlendirme standardı camelCase kullanılır.
+
+tek tırnakta, çift tırnakta kullanılabilir fakat hangisiyle başlandıysa öyle kapatılmalı.
+tırnaklar iç içe de kullanılabilir.
+
+es6 standartlarına göre yazacaksak; var kullanılmaması gerekiyor.
+
+//------------------------------------------------
+
+head içindeki function show() metodu ve body içindeki form ve div tagları arasına yazılanlardan çıkan sonuç;
+textboxa girilen değeri gönder butonuna tıklayarak body e göstermek.
+
+//------------------------------------------------
+
+Tip dönüşümü için parseInt
+console.log da string toplar
+
+//------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show()
+        {
+            let div = document.getElementById("showData");
+            div.innerHTML =  document.getElementById("name").value;
+            return false;      // aşağıda form tagi içine alınmazsa buna gerek yok fakat form tagi içindeyken yazılmazsa butona basıldığında gövdede bir defa çıkıp gidiyor. kalmıyor.
+        }
+    </script>
+</head>
+<body>
+    <!--JS'de ön tanımlı 4 temel tip var -->
+    <!-- string, number, boolean, object-->
+    <script>
+         var d1 = "Deneme";        //string
+         var d2 = true;            //boolean
+         var d3 = 123;             //number
+         var d4 = 12.99;           //number
+         var d5 = 'Naber';         //string
+         var d6 = {};              //object
+         var d7 = [];              //object
+         var d8 = new Object();    //object
+         var d99 = new Array();     //object
+
+         // tipini tarayıcı bodysinde görebilmek için; yan yana yazar br koymazsak
+         document.writeln(typeof d1);    
+         document.writeln("<br>");
+         document.writeln(typeof d2);
+         document.writeln(typeof d3);
+         document.writeln(typeof d4);
+         document.writeln(typeof d5);
+         document.writeln(typeof d6);
+         document.writeln(typeof d7);
+         document.writeln(typeof d8);
+
+
+
+         //var kullanmanın dezavantajı...
+         var d9 =123;
+         console.log(d9)
+         d9 ="Merhaba";
+         console.log(d9)
+         var d9='aaa';        //tanımlı değişken bir daha tanımlanamamalıydı.
+         console.log(d9)
+
+
+
+         //Javascript Açıklama satiri...
+         //let(ES6) =>var
+
+
+        https://www.google.com/search?q=javascipt+neden+var+kullanmamal%C4%B1y%C4%B1z&rlz=1C5CHFA_enTR1036TR1036&oq=javascipt+neden+var+kullanmamal%C4%B1y%C4%B1z&aqs=chrome..69i57j33i10i160j33i10i160i395.8970j1j7&sourceid=chrome&ie=UTF-8
+        https://emrahguzeltas.medium.com/javascriptte-de%C4%9Fi%C5%9Fken-tan%C4%B1mlarken-neden-var-yerine-let-kullanmal%C4%B1y%C4%B1z-5dabf4d6ecd
+
+
+
+         let d10 = "deneme";    
+         let d11 = 12;        // let d10 yazarsan var daki gibi izin vermez.
+         
+         //Hatalı kullanım var !!!
+         d222=44444;
+         console.log(d222);
+
+    </script>
+
+
+    <form>
+        <input type="text" id="name">
+        <input type="submit" value="Gonder" onclick="return show()">
+    </form>
+
+    <div id="showData">
+
+    </div>  
+
+
+</body>
+</html>
