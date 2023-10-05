@@ -1,0 +1,94 @@
+
+; kullanılmayadabilir.
+
+Hata yakalayabilmek için tarayıcıda f12 ve consoldan,
+
+
+//------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       //Operator
+       let d1 = 5;
+       let d2 = "5" 
+ 
+       document.writeln(typeof d1);
+       document.writeln(typeof d2);
+       document.writeln(d1==d2);  //tip'e değil içerige bakar...     //true yazdı dikkat!!!! normal eşitlik değil, içeriğe bakar.
+       document.writeln(d1===d2); //icerik + tip'e bakar..        //false
+    </script>
+
+     <!--Sart Ifadeleri-->
+    <script>
+         let sayi =5;
+         if(sayi > 10)
+         {
+            document.writeln("sayi 10 dan buyuk");
+           // console.log("sayi 10 dan buyuk")
+         }
+        else if(sayi<10)
+        {
+            document.writeln("sayi 10 dan kucuk");
+        }
+        else
+            document.writeln("sayi 10'a esit");
+
+    </script>
+
+    <!-- Switch-case -->
+    <script>
+        //prompt() => kullanıcıdan deger alir
+        //alert()  => messagaBox()
+        //confirm()=> yes/no ()oınay istene durumlarda kullanılır... 
+        let sayi2 = parseInt(prompt("Deger giriniz"));
+
+        switch(sayi2)
+        {
+             case 1:
+                document.writeln("Bir");
+                break;
+                case 2:
+                document.writeln("İki");
+                break;
+                case 3:
+                case 4:
+                document.writeln("Uc veya Dort");
+                break;
+                default:
+                document.writeln("1,2,3,4 degil");
+                break;
+        }
+    </script>
+    
+
+    // dikkat bu c# ta yoktu. Sonradan geldiği söyleniyor.
+
+    <script>
+
+        let sayi3=3;
+
+        switch(true)
+        {
+            case sayi3<10:
+               document.writeln("<br>sayi3 10 dan kucuk veya esit");    
+            break;  
+            case sayi3>10:
+               document.writeln("sayi3 10 dan buyuk");    
+            break; 
+            default:
+            document.writeln("sayi3 10 "); 
+                break;               
+        }
+
+    </script>
+</body>
+</html>
