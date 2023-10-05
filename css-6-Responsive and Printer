@@ -1,0 +1,75 @@
+
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+browser otomatik olarak oluşturyor.
+
+font-size: 20vw;
+vw : view
+bu ölçülerin yani genişliğin viewporta göre verilmesi gerekiyor.
+ekranın oranı fontla bağlanmış oluyor
+
+
+//-------------------------------- printer.css dosyası
+
+body{
+    background-color: white;
+}
+
+//-------------------------------- print.css dosyası
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="printer.css" media="printer">
+    <style>
+        main{
+            width: 90%;
+            height: 800px;
+            background-color: gray;
+        }
+        @media screen and (max-width: 500px){
+            body{
+                background-color: green;
+            }
+           
+        }
+        @media screen and (min-width: 501px) and (max-width:1200px){
+            body{
+                background-color:orange;
+            }
+           
+        }
+        @media screen and (min-width: 1201px){
+            body{
+                background-color:blueviolet;
+            }
+           
+        }
+        /* @media printer {
+            body{
+                background-color:gray;
+            }
+           
+        } */
+
+        h1 {
+            font-size: 20vw;            
+        }
+    </style>
+</head>
+<body>
+    <!--Responsive Web-->
+    <!--1.Yontem: Sayfadaki tum elementleri yüzde cinsinden vermek...  -->
+    <!-- <main> </main> -->
+
+    <!--2.Yontem: media tag kullanımı...-->
+    <!--@media tag kullanımı...-->
+
+    <!--3.Yontem: ViewPort kullanımı... -->
+    <h1>Merhaba</h1>
+</body>
+</html>
