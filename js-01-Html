@@ -1,0 +1,60 @@
+
+javascript kullanımına izin vermemek için; ya da kapatılmışsa açmak için; açıksa zaten birşey yazmaz;
+
+<noscript>
+        Java script destegi kapali...
+    </noscript>
+
+Artık browser ların bile eski olduğunda yanıt vermemesi gibi bir durum varken bu durumdan kaçmak artık zor.
+mesela js yoksa ajax yok en basiti.
+
+//------------------------------------------------
+
+head, body tagleri içinde veya js uzantılı dış dosyada da yazılabilir.
+head ve body taglarında yazılacaksa aşağıdaki tagle arasına yazılmalı.
+
+<script>
+
+    </script>
+
+//------------------------------------------------
+
+js kütüphanesi eklemek için;
+
+head içine;
+<script src="kutuphane.js"></script>
+
+//------------------------- kutuphane.js dosyası
+
+function Hello()
+{
+    alert("Hello");
+}
+
+//--------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Disaridan dosya eklemek icin kullanılır... -->
+    <script src="kutuphane.js"></script>
+</head>
+<body>
+    <noscript>
+        Java script destegi kapali...
+    </noscript>
+    <script>
+        alert('Merhaba JS');
+    </script>
+
+<script>
+    alert('Tekrar Merhaba JS');
+    Hello();
+</script>
+</body>
+</html>
