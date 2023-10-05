@@ -1,0 +1,86 @@
+
+Bootstrap kullanırken dikkat!!! İşin olmayan kodları boşuna yükleyip sisteme yük etme...
+
+grafik genellikle resme çevrilip resim basılıyor veya svg örneği aşağıda. 
+
+google arat html5 svg bar graphics
+
+vektörel de çizdirilebiliyor.
+
+css-tricks.com
+
+
+
+bootstrap dışındaki kütüphaneler,
+browserstack.com
+what are css frameworks?
+https://www.browserstack.com/guide/top-css-frameworks#:~:text=Evaluating%20CSS%20Frameworks-,What%20are%20CSS%20Frameworks%3F,%2C%20fonts%2C%20navbars%2C%20etc.
+Top 5 CSS Frameworks for Website Developers and Designers
+1. Bootstrap
+2. Tailwind CSS
+3. Foundation
+4. Bulma
+5. Skeleton
+
+
+
+
+//-----------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <a href="" class="btn btn-primary" style="width: 300px;">Google</a>
+    <table class="table table-striped" >
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+    </table>
+    <form>
+        <input type="text" class="form form-control"/>
+    </form>
+    <svg>
+        <g class="bar">
+            <rect width="40" height="19"></rect>
+            <text x="45" y="9.5" dy=".35em">4 apples</text>
+          </g>
+          <g class="bar">
+            <rect width="80" height="19" y="20"></rect>
+            <text x="85" y="28" dy=".35em">8 bananas</text>
+          </g>
+          <g class="bar">
+            <rect width="150" height="19" y="40"></rect>
+            <text x="150" y="48" dy=".35em">15 kiwis</text>
+          </g>
+    </svg>
+</body>
+</html>
