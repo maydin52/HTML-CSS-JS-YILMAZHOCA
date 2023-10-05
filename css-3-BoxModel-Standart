@@ -1,0 +1,94 @@
+
+Standart modelde bazı problemler var. En son grid gelmiştir.
+flex ve grid box modelin bazı eksiklerini kapatıyor.
+
+standartta alt alta dizer kutuları
+
+padding : içeriyle olan uzaklık
+margin : dışarıyla olan uzaklık
+
+
+//------------------------------------- style.css dosyası
+
+#main{
+    width: 1200px;
+    height: 760px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    width: 1200px;
+    height: 160px;
+    background-color:#333333;
+}
+
+#nav{
+    width: 1200px;
+    height: 60px;
+    background-color:orange;
+}
+
+#content{
+    width: 1200px;
+    height: 500px;
+    background-color:snow;
+}
+
+#left{
+    width: 200px;
+    height: 500px;
+    background-color:blueviolet;
+    float: left;
+}
+
+#middle{
+    width: 800px;
+    height: 500px;
+    background-color:cornflowerblue;
+    float: left;
+}
+
+#right{
+    width: 200px;
+    height: 500px;
+    background-color:lightsalmon;
+    float: left;
+}
+
+#footer{
+    width: 1200px;
+    height: 40px;
+    background-color:green;
+}
+
+
+
+//----------------------------------------------- BoxModel.html dosyası
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--HTML 5 ile gelen etiketler (tasarim)-->
+    <!--header, footer, nav, aside, main, section,article-->
+
+     <div id="main">
+        <div id="header"></div>
+        <div id="nav"></div>
+        <div id="content">
+             <div id="left"></div>
+             <div id="middle"></div>
+             <div id="right"></div>
+        </div>
+        <div id="footer"></div>
+     </div>
+</body>
+</html>
