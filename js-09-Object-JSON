@@ -1,0 +1,86 @@
+
+
+Örnek JSON datası
+https://www.json.org/example.html
+https://www.json.org/json-en.html
+
+
+
+Test amaçlı fake JSON datası veriyor. 
+https://reqres.in/
+
+sayfanın altındaki request e bastım.
+https://reqres.in/api/users?page=2
+edge de açarsan kodlar daha nizami görünüyor.
+
+
+
+
+en çok kullanılan servisler; 
+- hava durumu servisleri,   // gelen değere göre sembolü güneş gösteriyor vs.
+- borsa servisleri,
+- döviz kuru servisler
+
+
+
+e-ticaret sitelerinde de servislerle çalışılıyor.
+DOğrudan adamın veritabanına erişemezsiniz.
+
+Sokakta gezerken polis elinde gbt cihazı, kimlikteki karekodu okutuyor, elindeki cihaza geliyor. Yaklaşık 150 milyon kişinin verisi o cihazda yok.
+Servisle tckn servise gönderiyor.
+
+
+//---------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function Personel(ad,soyad)
+        {
+            this.Ad=ad;
+            this.Soyad=soyad;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <script>
+
+        //ES 6 ile geldi
+        class Personnel
+        {
+            constructor(ad,soyad)
+            {
+                this.Ad = ad;
+                this.Soyad=soyad;
+            }
+        } 
+
+
+        //Object Oluşturma Yöntemleri
+
+        let obj1 = new Object();
+
+        let obj2 = new Personel("Cevdet","Dursun");        // dikkat!!! iki personel aynı değil. iki ayrı örnek var.
+
+        let obj3 = new Personnel("Selami","Dogan");
+        document.writeln(obj3.Ad);
+
+        let obj4 = {Ad:"dursun",Soyad:"Durmasin"};         //JSON(Javascript Object Notation) 
+
+        let obj5= {}; //object
+        //[] => dizi
+        //{} => object
+        //"Ad":"Cevdet" =>property
+        
+    </script>
+</body>
+</html>
