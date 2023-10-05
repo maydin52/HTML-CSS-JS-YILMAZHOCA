@@ -1,0 +1,201 @@
+Tilda klavye kısayolu;
+Alt+126 
+mac de sağ option + ü
+
+Dikkat!! html5 öncesi <tr bgcolor = "orange"> ile tablo satırlarının biri koyu biri açık oluyorduç Kaldırıldı. Daha farklı yapılıyor.
+<table border = "1">
+        <tr bgcolor = "orange">
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+
+Tablo konusu;
+odd tek
+even çift
+n+1 kullanımına dikkat
+
+
+
+//---------------------- style.css dosyası
+
+
+/*h1 ve h5 etiketlerine aynı stili uygula...*/
+h1,h5{
+    color:green;
+}
+
+/* Div içindeki h3 lere uygula... */
+div h3{
+    color:orange;
+}
+
+/*kutu clasıındaki h3 lere uygula...*/
+.kutu h3{
+    color:red;
+}
+
+/*div icerisindeki cocuk seviyesindeki h2 lere uygula, torunlarla ilgilenmez... */
+div>h2{
+    color:blueviolet;
+}
+
+/*Div den sonraki ilk h3'e uygula... */
+div+h3{
+    color:lightcoral;
+}
+
+/*Div den sonraki tum h3 lere uygula... */
+div~h3{
+    color:lightcoral;
+}
+
+
+/* tr:nth-child(odd)
+{
+   background-color: lightslategray;
+}
+
+tr:nth-child(even)
+{
+  background-color: lightseagreen;
+} */
+
+/* tr:nth-child(2n+1)
+{
+   background-color: lightslategray;
+}
+
+tr:nth-child(2n)
+{
+  background-color: lightseagreen;
+} */
+
+tr:nth-child(3n)
+{
+   background-color: lightslategray;
+}
+
+tr:nth-child(3n+1)
+{
+  background-color: lightseagreen;
+}
+tr:nth-child(3n+2)
+{
+  background-color:lightcoral;
+}
+
+tr:first-child
+{
+    background-color: #333;
+}
+tr:last-child
+{
+    background-color: gray;
+}
+
+input{
+    background-color: lawngreen;
+    border:1px solid #333;
+}
+
+input[type=text]{
+    background-color:lightskyblue;
+    border:1px solid #333;
+}
+
+input[disabled]{
+    background-color:lightgrey;
+    border:1px solid #333;
+}
+
+a{
+    color:blue;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+a:hover{
+    color:lightblue;
+    text-decoration: underline;
+}
+
+
+
+//---------------------- selectors.html dosyası
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <h1>H1 Baslik</h1>
+    <h5>H5 Kucuk baslik</h5>
+    <div>
+        <h2>H2 Alt baslik Div icinde ilk sırada</h2>
+        <span>
+            <h2>H2 Alt baslik Div icinde span içerisinde</h2>
+        </span>
+        <h2>H2 Alt baslik Div icinde spanden sonra</h2>
+        <h3>div icinde h3</h3>
+    </div>
+    <h3>div dısında ilk h3</h3>
+    <h3>div dısında ikinci h3</h3>
+    <h3>div dısında ucuncu h3</h3>
+    <div class="kutu">
+        <h3>kutu icinde h3</h3>
+    </div>
+
+    <table border="1">
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+        <tr>
+            <td>Deneme</td>
+            <td>Deneme</td>
+            <td>Deneme</td>
+        </tr>
+    </table>
+    <br>
+    <form>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" disabled/>
+        <input type="password" />
+        <input type="submit"  value="gonder" />
+    </form>
+    <br>
+    <a href="">Ana Sayfa</a>
+    <a href="">İletişim</a>
+    <a href="">Urunler</a>
+    &nbsp;
+</body>
+</html>
