@@ -1,0 +1,87 @@
+
+Koleksiyon ve dizi diye bir ayrım yok.
+Js dizi var.
+
+var kullanımından dolayı Js geliştirilirken ram performansı konusu dikkate alınmamıştır. Daha çok esneklik üzerine odaklanılmış.
+
+C# taki gibi stack queue gibi değil burada bir dizi var ve istediğiniz gibi kullanıyorsunuz.
+
+let dizi1 = new Array();   //bos dizi  aşırı yüklenmiş haline bak. params.
+
+dizi1.push stackte kullanılır. Yani bir dizi tanımladığınızda çağırırken stack gibi de queue ve diğerleri gibi de kullanabiliyoruz.
+stack te örnek metodlar;
+push en sona ekler.
+pop en sondan alıyor.
+
+queue da örnek metodlar;
+unshift 
+shift
+
+c# foreach e karşılık gelen for of
+
+js deki foreach metod.
+diğerlerini üç satırda yazmışken bunu tek satırda yazdık.
+
+=> operatörü c# ta lambda, js de arrow ya da fat arrow olarak geçiyor.
+c,c++ taki -> operatöründen ayırmak için fat arrow
+
+DİKKAT !!! sadece tüm diziyi görmek için döngüye gerek yok.
+
+denge önemli
+js es6 ve typescript ile biraz sıkılaştırdılar
+c# da dynamic gibi kullanımlarla biraz esnettiler.
+
+kod ne kadar esnekse hataları yakalamak zorlaşıyor.
+
+mvc bitince servisler konusunda bunlar yine kullanılacak.
+
+js frameworku demek js ile yazılmış demek. Yani kullanırken de js kullanacağız.
+
+//---------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Diziler
+        //JS:Dizi koleksiyon aynı...
+
+        let dizi1 = new Array();   //bos dizi
+        let dizi2 = new Array(10); //10 elemanlı dizi
+        let dizi3 = new Array(2,5,6,7,"deneme"); //ilk deger ataması
+        let dizi4 = [];
+        let dizi5 = [5,566,67,8];
+
+        //JS'de dizileri normal koleksiyon gibi, dizi gibi queue gibi, stack gibi kullanabiliriz...
+       document.writeln(dizi2.length);
+       dizi2[4] =444;          
+
+        //for-in  => indis uzerinden calisir...
+        for(let i in dizi3)
+        {
+            document.writeln(i + ". deger = " + dizi3[i] + " ");
+        }
+        document.writeln("<br>");
+        for(let item of dizi3)
+        {
+            document.writeln(item);
+        }
+        document.writeln("<br>");
+
+        //arrow op.
+        //fat arrow
+        dizi3.forEach(x=>document.writeln(x));
+        document.writeln("<br>");
+        document.writeln(dizi2);
+        document.writeln(dizi5);
+        
+        
+    </script>
+</body>
+</html>
