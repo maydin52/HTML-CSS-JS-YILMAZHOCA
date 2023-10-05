@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            /* width: 1200px; */
+            width: 100%;
+            height: 780px;
+            background-color: gray;
+
+            display: grid;
+            /* grid-template-columns: 200px 800px 200px;
+            grid-template-rows: 150px 60px 520px 50px; */
+
+            /* grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 150px 60px 520px 50px; */
+
+            grid-template-columns: 1fr 8fr 1fr;
+            grid-template-rows: 3fr 1fr 8fr 1fr;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .kutu{
+            background-color: orange;
+            border: 1px solid #333;
+        }
+        .header
+        {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .birlestir{
+            grid-column:1/4;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="kutu header">1</div> 
+        <div class="kutu birlestir">2</div> 
+        <div class="kutu">3</div> 
+        <div class="kutu">4</div> 
+        <div class="kutu">5</div> 
+        <div class="kutu birlestir">6</div> 
+        <!-- <div class="kutu">7</div> 
+        <div class="kutu">8</div>  -->
+    </main>
+</body>
+</html>
